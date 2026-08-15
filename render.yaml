@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: sarour-store-bot
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: SUPPLIER_API_KEY
+        sync: false
+      - key: OWNER_ID
+        value: "8179643564"
+      - key: SUPPORT_USERNAME
+        value: "@Sarour99"
+      - key: GROUP_USERNAME
+        value: "@sarourstore"
+      - key: CHANNEL_USERNAME
+        value: "@sarourstors"
+      - key: USD_TO_BDT
+        value: "120"
+      - key: PROFIT_MARKUP_BDT
+        value: "50"
+      - key: REFERRAL_REWARD_BDT
+        value: "0"
+      - key: MIN_DEPOSIT_BDT
+        value: "50"
+      - key: AUTO_SYNC_MINUTES
+        value: "15"

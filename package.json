@@ -1,0 +1,19 @@
+{
+  "name": "sarour-store-render-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Sarour Store Telegram bot for Render",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "check": "node --check index.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "pg": "^8.16.3"
+  }
+}
